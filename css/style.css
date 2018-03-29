@@ -46,14 +46,15 @@ button:focus {
 
 .btn {
 	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
-	font-size: 18px;
+	font-size: 24px;
 /*	width:120px;
 	height:40px;*/
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .btn_container {
-	border-width: 20px 0;
+	margin: 30px 10px;
 }
 
 .intro_text_b1 {
@@ -62,7 +63,7 @@ button:focus {
 	margin: 10px auto;
 	text-align: center;
 	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
-	font-size: 40px;
+	font-size: 60px;
 }
 
 .intro_text_b2 {
@@ -83,6 +84,17 @@ button:focus {
 	font-size: 24px;
 }
 
+#game_intro4 {
+	color: 	#00AA00;	/*亮綠色*/
+	width: 80%; 
+	height: 40px;
+	margin: 10px auto;
+	text-align: center;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 48px;
+	transition: all .2s ease-in-out;
+}
+
 .intro_text {
 	color: white;
 	width: 80%; 
@@ -92,15 +104,131 @@ button:focus {
 	font-size: 24px;
 }
 
-.red_30px {
-	font-weight: bold;
+.input01 {
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 20px;
+	width: 60px;
+	margin: 15px 12px;
+}
+
+.green_30px {
 	font-size: 36px;
-	color: red;
+	color: green;
 }
 
 .blue_30px {
-	font-weight: bold;
 	font-size: 36px;
 	color: blue;
 }
+
+
+.play_area {
+	text-align: center;
+}
+
+.small_box {	
+	font-size: 35px;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;	/*for veritcallly center*/
+	width: 60px;
+	border-radius: 7px;
+	margin: 3px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.small_box:hover {
+	transform: scale(1.1);
+}
+
+.small_box_checked {
+	background-color: #A42D00;	/*深紅*/
+	background-color: red;
+	color: white;
+}
+
+.small_box_anno {	
+	font-size: 14px;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin: 3px;
+	color: white;
+}
+
+#stage_circle_container {
+	text-align: center;
+	margin: 50px 3px;
+}
+
+.stage_circle {
+	margin: 5px 60px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	transition: all .2s ease-in-out;
+}
+
+.stage_circle_focused {
+	animation: stage_circle_animation 2s ease-in-out infinite ;
+}
+
+@keyframes stage_circle_animation {
+    0%   {transform: scale(2);}  
+    50%  {transform: scale(2.5);}
+    100%  {transform: scale(2);}
+}
+
+.bg_red {
+	background-color: red;
+}
+
+.bg_yellow {
+	background-color: yellow;
+}
+
+.bg_green {
+	background-color: green;
+}
+
+#equalTo {
+	font-size: 50px;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	display: inline-block;
+	height: 60px;
+	margin: 3px;
+	color: white;
+	position: absolute;
+	left: 65%;
+}
+
+#confirm {
+	position: fixed;
+	margin: 20px 5px;
+	bottom: 50px;
+	left: 47%;
+}
+
+#game_img img{
+	border: 0;
+	border-color: transparent;
+}
+
+.golden_shining {
+	animation: golden_shining_animation 1.6s linear infinite;
+}
+
+@keyframes golden_shining_animation {
+    0%   {color: #FFBB00;}  
+    50%  {color: #FFFF77;}
+    100%  {color: #FFBB00;}
+}
+
+
 
