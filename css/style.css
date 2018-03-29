@@ -1,0 +1,106 @@
+html {
+	background-color: black;
+}
+
+/*This is to avoid all elements to be selected*/
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*This make the focused element no edge effect*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.block {
+	/*置中*/
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	/*置中end*/
+
+	width: 100%;
+	position: absolute;
+}
+
+#intro_block {    
+
+}
+
+.title {
+	margin: 10px;
+	border-width: 10px;
+}
+
+.btn {
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 18px;
+/*	width:120px;
+	height:40px;*/
+	border-radius: 5px;
+}
+
+.btn_container {
+	border-width: 20px 0;
+}
+
+.intro_text_b1 {
+	color: white;	
+	width: 80%; 
+	margin: 10px auto;
+	text-align: center;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 40px;
+}
+
+.intro_text_b2 {
+	color: #66B3FF;
+	width: 80%; 
+	margin: 10px auto;
+	text-align: center;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 32px;
+}
+
+.intro_text_b3 {
+	color: #FFE66F;
+	width: 80%; 
+	margin: 10px auto;
+	text-align: center;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 24px;
+}
+
+.intro_text {
+	color: white;
+	width: 80%; 
+	margin: 0 auto;
+	text-align: center;
+	font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-size: 24px;
+}
+
+.red_30px {
+	font-weight: bold;
+	font-size: 36px;
+	color: red;
+}
+
+.blue_30px {
+	font-weight: bold;
+	font-size: 36px;
+	color: blue;
+}
+
